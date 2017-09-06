@@ -23,13 +23,19 @@ call your class Employee and receive all the data in the constructor in the orde
 */
 
 class Employee {
-    constructor(){
-        this.first_name = 
-        this.last_name =
-        this.email =
-        this.age =
+    constructor(firstName,lastName, email, age){
+        this.first_name = firstName;
+        this.last_name = lastName;
+        this.email = email;
+        this.age = age;
     }
+   makeWidget(){
+       return this.first_name + " " + this.last_name + " Widget";
+   }
 }
+
+
+
 
 /*
 
@@ -48,8 +54,24 @@ call your class Manager
 
 */
 
+class Manager {
+    constructor(firstName,lastName, email, age, reports=[]){
+        this.first_name = firstName;
+        this.last_name = lastName;
+        this.email = email;
+        this.age = age;
+        this.reports = reports;
+        
+    }
+    hire(emp){
+    this.reports.push(emp) 
+    }
+    fire(i){
+    this.reports.splice(i,1)
+    }
 
-
+}
+    
 
 
 /*

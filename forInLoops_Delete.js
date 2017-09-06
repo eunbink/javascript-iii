@@ -32,7 +32,9 @@
 // Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 
 function showValues( obj ) {
-  // CODE HERE
+  for (var i in obj){
+    return obj.i +=
+    }
 }
 
 
