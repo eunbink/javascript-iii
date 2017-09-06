@@ -22,7 +22,14 @@ Each employee can:
 call your class Employee and receive all the data in the constructor in the order listed
 */
 
-
+class Employee {
+    constructor(){
+        this.first_name = 
+        this.last_name =
+        this.email =
+        this.age =
+    }
+}
 
 /*
 

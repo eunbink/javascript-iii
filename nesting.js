@@ -38,7 +38,17 @@ var employees = [{
 
 // Code here
 
+function employeeUpdater (){
+  return employees.filter(function(e){ 
+    if(e.firstName === 'Theo'){
+      return delete e;
+    } 
+   else if(e.firstName === 'Lorie'){
+      return e.department = "HR";
+    }
+  })
 
+}
 
 
 
@@ -57,7 +67,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 // Code here
 
 
+function removeDuplicates () {
+  return workplaceAccidents.filter(function(e,i,arr){
+    return workplaceAccidents.indexOf(e) === i;
+     
 
+  })
+
+}
 
 
 
@@ -86,7 +103,6 @@ var cat = {
 
 var grumpyActivity;
 var fluffy2ndFriend;
-
 
 
 
